@@ -103,6 +103,36 @@
 	required_skill_for_nest_opening = SKILL_MEDICAL
 	required_skill_level_for_nest_opening = SKILL_MEDICAL_DEFAULT
 
+/obj/item/storage/firstaid/large
+	name = "large first-aid kit"
+	desc = "It's a large first aid kit with a little more storage capacity than the usual. This one seems far too cumbersome to fit in a backpack, training or not. Usually found mounted on walls."
+	icon_state = "firstaidbig"
+	storage_slots = 12
+	w_class = SIZE_LARGE
+
+/obj/item/storage/firstaid/large/update_icon()
+	if(content_watchers || !length(contents))
+		icon_state = "firstaidbig_empty"
+	else
+		icon_state = icon_full
+
+/obj/item/storage/firstaid/large/fill_preset_inventory()
+	new /obj/item/device/healthanalyzer(src)
+	new /obj/item/stack/medical/bruise_pack(src)
+	new /obj/item/stack/medical/bruise_pack(src)
+	new /obj/item/stack/medical/ointment(src)
+	new /obj/item/stack/medical/ointment(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/tricord(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/tricord(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/tramadol(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/tramadol(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/inaprovaline(src)
+	new /obj/item/stack/medical/splint(src)
+	new /obj/item/stack/medical/splint(src)
+
+/obj/item/storage/firstaid/large/empty/fill_preset_inventory()
+	return
+
 /obj/item/storage/firstaid/robust
 	icon_state = "firstaid"
 

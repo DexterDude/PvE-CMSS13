@@ -75,3 +75,10 @@
 	max_stored = 2
 	initial_stored = 0
 	allowed_type = /obj/item/ammo_magazine/hardpoint/boyars_dualcannon
+
+/obj/structure/gun_rack/medkit
+	icon_state = "medkit"
+	desc = "A wall-mounted rack for storing large medical kits on."
+	max_stored = 1
+	initial_stored = 1
+	allowed_type = /obj/item/storage/firstaid/large

@@ -3597,10 +3597,10 @@
 	},
 /area/golden_arrow/briefing)
 "vo" = (
-/obj/structure/machinery/cm_vending/sorted/medical/wall_med{
-	pixel_y = 25
-	},
 /obj/structure/machinery/cm_vending/sorted/tech/comp_storage,
+/obj/structure/gun_rack/medkit{
+	pixel_y = 23
+	},
 /turf/open/floor/almayer{
 	icon_state = "plate"
 	},
@@ -5434,8 +5434,8 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
 "FS" = (
-/obj/structure/machinery/cm_vending/sorted/medical/wall_med{
-	pixel_y = 25
+/obj/structure/gun_rack/medkit{
+	pixel_y = 23
 	},
 /turf/open/floor/almayer{
 	icon_state = "plate"
