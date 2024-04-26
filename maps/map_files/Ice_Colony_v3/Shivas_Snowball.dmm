@@ -592,7 +592,7 @@
 /turf/open/auto_turf/snow/layer1,
 /area/shiva/exterior/cp_lz2)
 "abV" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/blocker/forcefield/multitile_vehicles,
 /turf/open/auto_turf/ice/layer1,
@@ -3795,7 +3795,7 @@
 	},
 /area/shiva/interior/colony/medseceng)
 "auM" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/effect/landmark/crap_item,
 /turf/open/floor/shiva{
 	dir = 1
@@ -16254,7 +16254,7 @@
 /turf/open/auto_turf/ice/layer0,
 /area/shiva/exterior/cp_lz2)
 "lsk" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/prison{
 	icon_state = "kitchen"
 	},
@@ -19970,7 +19970,7 @@
 	},
 /area/shiva/exterior/lz2_fortress)
 "pBy" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/shiva{
 	dir = 1
 	},
@@ -21628,7 +21628,7 @@
 	},
 /area/shiva/interior/colony/research_hab)
 "ril" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/shiva{
 	icon_state = "multi_tiles"
 	},
@@ -22792,7 +22792,7 @@
 	},
 /area/shiva/interior/colony/medseceng)
 "sGI" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/item/clothing/head/cakehat,
 /turf/open/floor/prison{
 	icon_state = "kitchen"

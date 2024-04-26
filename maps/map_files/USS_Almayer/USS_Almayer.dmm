@@ -12560,7 +12560,7 @@
 /obj/structure/machinery/light{
 	dir = 4
 	},
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/item/reagent_container/food/snacks/tofukabob,
 /obj/item/reagent_container/food/snacks/tofubreadslice,
 /obj/item/reagent_container/food/snacks/tofubreadslice,
@@ -28701,7 +28701,7 @@
 	},
 /area/almayer/living/starboard_garden)
 "cWy" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/item/reagent_container/food/snacks/packaged_burger,
 /obj/item/reagent_container/food/snacks/packaged_burger,
 /obj/item/reagent_container/food/snacks/packaged_burger,
@@ -30802,7 +30802,7 @@
 	},
 /area/almayer/hull/lower_hull/l_m_s)
 "dJH" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/structure/machinery/light{
 	dir = 1
 	},
@@ -34467,7 +34467,7 @@
 	},
 /area/almayer/engineering/upper_engineering/starboard)
 "fhQ" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/structure/machinery/light,
 /obj/item/reagent_container/food/condiment/sugar,
 /turf/open/floor/almayer{
@@ -36654,7 +36654,7 @@
 /turf/open/floor/almayer,
 /area/almayer/hallways/hangar)
 "ggl" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/structure/machinery/light{
 	dir = 1
 	},
@@ -46832,7 +46832,7 @@
 	},
 /area/almayer/command/cic)
 "ksA" = (
-/obj/structure/closet/secure_closet/freezer/fridge/groceries,
+/obj/structure/closet/secure_closet/freezer/grocery,
 /obj/structure/machinery/light{
 	dir = 8
 	},
@@ -53491,7 +53491,7 @@
 	},
 /area/almayer/command/cic)
 "nbB" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/almayer{
 	icon_state = "plate"
 	},
@@ -58323,7 +58323,7 @@
 	},
 /area/almayer/hull/lower_hull/l_f_p)
 "pdt" = (
-/obj/structure/closet/secure_closet/freezer/fridge/groceries,
+/obj/structure/closet/secure_closet/freezer/grocery,
 /turf/open/floor/almayer{
 	icon_state = "plate"
 	},

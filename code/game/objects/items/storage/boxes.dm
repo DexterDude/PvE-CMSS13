@@ -459,7 +459,7 @@
 	can_hold = list(/obj/item/tool/match)
 
 /obj/item/storage/box/matches/fill_preset_inventory()
-	for(var/i=1; i <= 14; i++)
+	for(var/i = 1; i <= 14; i++)
 		new /obj/item/tool/match(src)
 
 /obj/item/storage/box/matches/attackby(obj/item/tool/match/W as obj, mob/user as mob)
@@ -761,3 +761,218 @@
 	else if(!isopened)
 		isopened = 1
 		icon_state = "mealpackopened"
+
+//food boxes for storage in bulk
+
+// this is awful
+
+//meat
+/obj/item/storage/box/foodproduct
+	name = "box of food"
+	desc = "You shouldn't see this. Also, I lied. I'm empty."
+
+/obj/item/storage/box/foodproduct/meat
+	name = "box of meat"
+
+/obj/item/storage/box/foodproduct/meat/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/meat/monkey(src)
+
+/obj/item/storage/box/foodproduct/fish
+	name = "box of fish"
+
+/obj/item/storage/box/foodproduct/fish/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/carpmeat(src)
+
+//grocery
+
+/obj/item/storage/box/foodproduct/milk
+	name = "box of milk"
+
+/obj/item/storage/box/foodproduct/milk/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/drinks/milk(src)
+
+/obj/item/storage/box/foodproduct/soymilk
+	name = "box of soymilk"
+
+/obj/item/storage/box/foodproduct/soymilk/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/drinks/soymilk(src)
+
+/obj/item/storage/box/foodproduct/enzyme
+	name = "box of enzyme"
+
+/obj/item/storage/box/foodproduct/enzyme/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/condiment/enzyme(src)
+
+//dry storage
+
+/obj/item/storage/box/foodproduct/flour
+	name = "box of flour"
+
+/obj/item/storage/box/foodproduct/flour/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/flour(src)
+
+/obj/item/storage/box/foodproduct/sugar
+	name = "box of sugar"
+
+/obj/item/storage/box/foodproduct/sugar/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/condiment/sugar(src)
+
+/obj/item/storage/box/foodproduct/saltshaker
+	name = "box of saltshakers"
+
+/obj/item/storage/box/foodproduct/saltshaker/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/condiment/saltshaker(src)
+
+/obj/item/storage/box/foodproduct/peppermill
+	name = "box of peppermills"
+
+/obj/item/storage/box/foodproduct/peppermill/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/condiment/peppermill(src)
+
+/obj/item/storage/box/foodproduct/mint
+	name = "box of mints"
+
+/obj/item/storage/box/foodproduct/mint/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/mint(src)
+
+// ORGANICS
+
+/obj/item/storage/box/foodproduct/apple
+	name = "box of apples"
+
+/obj/item/storage/box/foodproduct/apple/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/grown/apple(src)
+
+/obj/item/storage/box/foodproduct/banana
+	name = "box of bananas"
+
+/obj/item/storage/box/foodproduct/banana/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/grown/banana(src)
+
+/obj/item/storage/box/foodproduct/chanterelles
+	name = "box of chanterelle"
+
+/obj/item/storage/box/foodproduct/chanterelle/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/grown/mushroom/chanterelle(src)
+
+/obj/item/storage/box/foodproduct/cherries
+	name = "box of cherries"
+
+/obj/item/storage/box/foodproduct/cherries/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/grown/cherries(src)
+
+/obj/item/storage/box/foodproduct/chili
+	name = "box of chili"
+
+/obj/item/storage/box/foodproduct/chili/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/grown/chili(src)
+
+/obj/item/storage/box/foodproduct/cabbage
+	name = "box of cabbages"
+
+/obj/item/storage/box/foodproduct/cabbage/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/grown/cabbage(src)
+
+/obj/item/storage/box/foodproduct/carrot
+	name = "box of carrots"
+
+/obj/item/storage/box/foodproduct/carrot/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/grown/carrot(src)
+
+/obj/item/storage/box/foodproduct/corn
+	name = "box of corn"
+
+/obj/item/storage/box/foodproduct/corn/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/grown/corn(src)
+
+/obj/item/storage/box/foodproduct/eggplant
+	name = "box of eggplants"
+
+/obj/item/storage/box/foodproduct/eggplant/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/grown/eggplant(src)
+
+/obj/item/storage/box/foodproduct/lemon
+	name = "box of lemons"
+
+/obj/item/storage/box/foodproduct/lemon/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/grown/lemon(src)
+
+/obj/item/storage/box/foodproduct/lime
+	name = "box of limes"
+
+/obj/item/storage/box/foodproduct/lime/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/grown/lime(src)
+
+/obj/item/storage/box/foodproduct/orange
+	name = "box of oranges"
+
+/obj/item/storage/box/foodproduct/orange/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/grown/orange(src)
+
+/obj/item/storage/box/foodproduct/potato
+	name = "box of potatoes"
+
+/obj/item/storage/box/foodproduct/potato/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/grown/potato(src)
+
+/obj/item/storage/box/foodproduct/tomato
+	name = "box of tomatoes"
+
+/obj/item/storage/box/foodproduct/tomato/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/grown/tomato(src)
+
+/obj/item/storage/box/foodproduct/whitebeet
+	name = "box of whitebeet"
+
+/obj/item/storage/box/foodproduct/whitebeet/fill_preset_inventory()
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/grown/whitebeet(src)

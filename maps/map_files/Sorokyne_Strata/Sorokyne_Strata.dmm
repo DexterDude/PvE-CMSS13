@@ -2637,7 +2637,7 @@
 	},
 /area/strata/ag/interior/dorms/canteen)
 "ahX" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/item/reagent_container/food/drinks/milk,
 /obj/item/reagent_container/food/drinks/milk,
 /obj/item/reagent_container/food/drinks/milk,
@@ -6866,7 +6866,7 @@
 	},
 /area/strata/ag/interior/dorms)
 "avA" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/prison{
 	icon_state = "darkredfull2"
 	},
@@ -8603,7 +8603,7 @@
 /turf/open/floor/interior/plastic,
 /area/strata/ag/interior/outpost/canteen)
 "aAY" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/item/reagent_container/food/drinks/milk,
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/strata{
@@ -10848,7 +10848,7 @@
 /turf/open/auto_turf/strata_grass/layer1,
 /area/strata/ug/interior/jungle/deep/east_dorms)
 "aIa" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/strata{
 	dir = 8;
 	icon_state = "white_cyan2"
@@ -14764,7 +14764,7 @@
 	},
 /area/strata/ag/interior/outpost/canteen/bar)
 "aVy" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/item/reagent_container/food/drinks/flask,
 /obj/item/reagent_container/food/drinks/milk,
 /obj/item/reagent_container/food/drinks/milk,
@@ -27483,7 +27483,7 @@
 /turf/closed/wall/strata_outpost,
 /area/strata/ag/interior/outpost/canteen/bar)
 "cnp" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/strata{
 	dir = 4;
 	icon_state = "cyan2"
@@ -30348,7 +30348,7 @@
 /turf/closed/wall/strata_outpost,
 /area/strata/ug/interior/jungle/deep/east_dorms)
 "fzn" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/strata{
 	dir = 8;
 	icon_state = "white_cyan2"
@@ -33683,7 +33683,7 @@
 /turf/open/auto_turf/snow/brown_base/layer2,
 /area/strata/ag/exterior/paths/southresearch)
 "kXi" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/strata{
 	dir = 8;
 	icon_state = "white_cyan2"

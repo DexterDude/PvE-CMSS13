@@ -5008,7 +5008,7 @@
 /turf/open/floor/kutjevo/colors/cyan/tile,
 /area/kutjevo/interior/complex/med/operating)
 "gOk" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/structure/machinery/light{
 	dir = 1
 	},

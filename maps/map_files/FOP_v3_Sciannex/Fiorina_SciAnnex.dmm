@@ -19514,7 +19514,7 @@
 /turf/open/floor/prison,
 /area/fiorina/lz/near_lzII)
 "lQd" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/prison{
 	icon_state = "kitchen"
 	},
@@ -25299,7 +25299,7 @@
 	},
 /area/fiorina/tumor/aux_engi)
 "pyW" = (
-/obj/structure/closet/secure_closet/freezer/fridge/groceries,
+/obj/structure/closet/secure_closet/freezer/grocery,
 /obj/structure/machinery/light/double/blue{
 	dir = 4;
 	pixel_x = 10;
@@ -35260,7 +35260,7 @@
 	},
 /area/fiorina/station/security)
 "vKV" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/item/reagent_container/food/snacks/meat/human,
 /obj/item/reagent_container/food/snacks/meat/human,
 /obj/structure/machinery/light/double/blue,
@@ -36088,7 +36088,7 @@
 /turf/closed/wall/r_wall/prison,
 /area/fiorina/tumor/fiberbush)
 "wmp" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/prison{
 	dir = 10;
 	icon_state = "kitchen"

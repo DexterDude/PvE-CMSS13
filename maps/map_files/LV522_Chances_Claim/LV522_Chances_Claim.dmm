@@ -6103,7 +6103,7 @@
 	},
 /area/lv522/atmos/east_reactor)
 "cYf" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/item/reagent_container/food/condiment/enzyme,
 /obj/item/reagent_container/food/condiment/enzyme,
 /obj/effect/decal/cleanable/dirt,
@@ -21092,7 +21092,7 @@
 /turf/open/auto_turf/sand_white/layer0,
 /area/lv522/outdoors/colony_streets/south_west_street)
 "iLc" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/prison{
 	icon_state = "darkredfull2"
 	},
@@ -26478,7 +26478,7 @@
 	},
 /area/lv522/indoors/c_block/bridge)
 "kEW" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/prison{
 	dir = 1;
 	icon_state = "blue_plate"
@@ -58069,7 +58069,7 @@
 	},
 /area/lv522/indoors/a_block/corpo/glass)
 "weh" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison{
 	icon_state = "floor_plate"

@@ -11424,7 +11424,7 @@
 /obj/structure/machinery/light{
 	dir = 4
 	},
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/item/reagent_container/food/snacks/tofukabob,
 /obj/item/reagent_container/food/snacks/tofubreadslice,
 /obj/item/reagent_container/food/snacks/tofubreadslice,
@@ -13731,7 +13731,7 @@
 	},
 /area/almayer/engineering/starboard_atmos)
 "epC" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/item/reagent_container/food/snacks/packaged_burger,
 /obj/item/reagent_container/food/snacks/packaged_burger,
 /obj/item/reagent_container/food/snacks/packaged_burger,
@@ -14245,7 +14245,7 @@
 	},
 /area/almayer/squads/alpha)
 "exS" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/structure/machinery/light,
 /obj/item/reagent_container/food/condiment/sugar,
 /turf/open/floor/almayer{
@@ -21883,7 +21883,7 @@
 	},
 /area/almayer/command/cichallway)
 "gLo" = (
-/obj/structure/closet/secure_closet/freezer/fridge/groceries,
+/obj/structure/closet/secure_closet/freezer/grocery,
 /obj/structure/machinery/light{
 	dir = 8
 	},
@@ -24625,7 +24625,7 @@
 	},
 /area/almayer/hull/lower_hull/l_m_s)
 "hBe" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/structure/machinery/light{
 	dir = 1
 	},
@@ -43430,7 +43430,7 @@
 	},
 /area/almayer/hull/upper_hull/u_f_p)
 "nvH" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/almayer{
 	icon_state = "plate"
 	},
@@ -47047,7 +47047,7 @@
 /turf/open/floor/almayer,
 /area/almayer/living/pilotbunks)
 "ozC" = (
-/obj/structure/closet/secure_closet/freezer/fridge/groceries,
+/obj/structure/closet/secure_closet/freezer/grocery,
 /turf/open/floor/almayer{
 	icon_state = "plate"
 	},
@@ -77962,7 +77962,7 @@
 	},
 /area/almayer/command/securestorage)
 "ydI" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/structure/machinery/light{
 	dir = 1
 	},

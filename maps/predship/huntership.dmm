@@ -1012,7 +1012,7 @@
 /obj/item/reagent_container/food/snacks/stew{
 	pixel_y = 3
 	},
-/obj/structure/closet/secure_closet/freezer/fridge{
+/obj/structure/closet/secure_closet/freezer/produce{
 	locked = 0
 	},
 /turf/open/floor{
@@ -1489,7 +1489,7 @@
 /obj/item/reagent_container/food/drinks/soymilk,
 /obj/item/reagent_container/food/drinks/soymilk,
 /obj/item/reagent_container/food/drinks/soymilk,
-/obj/structure/closet/secure_closet/freezer/fridge{
+/obj/structure/closet/secure_closet/freezer/produce{
 	locked = 0
 	},
 /turf/open/floor{
@@ -2253,7 +2253,7 @@
 	},
 /area/yautja)
 "yH" = (
-/obj/structure/closet/secure_closet/freezer/fridge/groceries,
+/obj/structure/closet/secure_closet/freezer/grocery,
 /turf/open/floor{
 	dir = 4;
 	icon_state = "darkred2"
@@ -2470,7 +2470,7 @@
 /obj/item/reagent_container/food/snacks/tomatomeat,
 /obj/item/reagent_container/food/snacks/tomatomeat,
 /obj/item/reagent_container/food/snacks/tomatomeat,
-/obj/structure/closet/secure_closet/freezer/fridge{
+/obj/structure/closet/secure_closet/freezer/produce{
 	locked = 0
 	},
 /turf/open/floor{
@@ -3056,7 +3056,7 @@
 	},
 /area/yautja)
 "RE" = (
-/obj/structure/closet/secure_closet/freezer/fridge/groceries,
+/obj/structure/closet/secure_closet/freezer/grocery,
 /turf/open/floor{
 	dir = 6;
 	icon_state = "darkred2"

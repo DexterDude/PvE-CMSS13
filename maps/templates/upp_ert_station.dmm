@@ -2817,7 +2817,7 @@
 /turf/closed/wall/strata_outpost/reinforced,
 /area/adminlevel/ert_station/upp_station)
 "Sa" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/item/reagent_container/food/condiment/enzyme,
 /obj/structure/machinery/light/double/blue,
 /turf/open/floor/strata{

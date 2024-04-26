@@ -24171,7 +24171,7 @@
 /obj/structure/machinery/light{
 	dir = 8
 	},
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/corsat{
 	icon_state = "cargo"
 	},
@@ -56727,7 +56727,7 @@
 	},
 /area/corsat/sigma/south/security)
 "rGH" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/corsat{
 	icon_state = "sterileplate"
 	},

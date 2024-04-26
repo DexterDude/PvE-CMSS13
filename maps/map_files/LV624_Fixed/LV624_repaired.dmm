@@ -8426,7 +8426,7 @@
 	},
 /area/lv624/lazarus/research)
 "jfv" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/wood,
 /area/lv624/ground/jungle/west_jungle/ceiling)
 "jfI" = (
@@ -14279,7 +14279,7 @@
 	},
 /area/lv624/lazarus/kitchen)
 "pNa" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor{
 	icon_state = "freezerfloor"
 	},

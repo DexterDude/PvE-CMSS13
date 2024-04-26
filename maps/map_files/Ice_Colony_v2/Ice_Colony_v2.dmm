@@ -8463,14 +8463,14 @@
 	},
 /area/ice_colony/surface/dorms/canteen)
 "axQ" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor{
 	dir = 1;
 	icon_state = "darkgreen2"
 	},
 /area/ice_colony/surface/dorms/canteen)
 "axR" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/effect/landmark/crap_item,
 /turf/open/floor{
 	dir = 1;
@@ -14989,7 +14989,7 @@
 	},
 /area/ice_colony/surface/research)
 "aRm" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor{
 	icon_state = "freezerfloor"
 	},
@@ -18751,7 +18751,7 @@
 	},
 /area/ice_colony/exterior/surface/valley/south/excavation)
 "bdF" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/structure/machinery/firealarm{
 	pixel_y = 24
 	},
@@ -18760,7 +18760,7 @@
 	},
 /area/ice_colony/underground/requesition/storage)
 "bdG" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/structure/machinery/alarm{
 	pixel_y = 24
 	},
@@ -19373,7 +19373,7 @@
 /turf/open/floor/plating/icefloor,
 /area/ice_colony/surface/excavation/storage)
 "bfu" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor{
 	dir = 10;
 	icon_state = "darkblue2"
@@ -23128,7 +23128,7 @@
 	},
 /area/ice_colony/underground/medical/hallway)
 "brG" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor{
 	dir = 5;
 	icon_state = "whitered"
@@ -25633,7 +25633,7 @@
 /turf/open/floor/plating,
 /area/ice_colony/underground/maintenance/central)
 "byW" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor{
 	dir = 9;
 	icon_state = "darkgreen2"

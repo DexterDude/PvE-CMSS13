@@ -1704,7 +1704,7 @@
 	},
 /area/adminlevel/ert_station/weyland_station)
 "uR" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/item/reagent_container/food/condiment/enzyme,
 /obj/structure/machinery/light/small/built{
 	dir = 4

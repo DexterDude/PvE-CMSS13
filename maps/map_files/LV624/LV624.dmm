@@ -11623,7 +11623,7 @@
 	},
 /area/lv624/lazarus/canteen)
 "aZD" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/structure/pipes/standard/simple/hidden/cyan{
 	dir = 4
 	},

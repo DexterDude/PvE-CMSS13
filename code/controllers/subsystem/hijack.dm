@@ -404,7 +404,7 @@ SUBSYSTEM_DEF(hijack)
 			continue
 
 		if(is_mainship_level(current_mob_turf.z))
-			if(istype(current_mob.loc, /obj/structure/closet/secure_closet/freezer/fridge))
+			if(istype(current_mob.loc, /obj/structure/closet/secure_closet/freezer))
 				continue
 
 			current_mob.death(create_cause_data("nuclear explosion"))

@@ -2154,7 +2154,7 @@
 	},
 /area/adminlevel/chinook/offices)
 "hC" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/almayer{
 	dir = 5;
 	icon_state = "plating"
@@ -3177,7 +3177,7 @@
 	},
 /area/adminlevel/chinook/sec)
 "kY" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/almayer{
 	icon_state = "plate"
 	},
@@ -6667,7 +6667,7 @@
 	},
 /area/adminlevel/chinook/medical)
 "wY" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/prison{
 	icon_state = "kitchen"
 	},
@@ -10661,7 +10661,7 @@
 	},
 /area/adminlevel/chinook/medical)
 "ND" = (
-/obj/structure/closet/secure_closet/freezer/fridge/groceries,
+/obj/structure/closet/secure_closet/freezer/grocery,
 /turf/open/floor/prison{
 	icon_state = "kitchen"
 	},

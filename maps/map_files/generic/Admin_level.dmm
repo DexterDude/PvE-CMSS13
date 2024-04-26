@@ -715,7 +715,7 @@
 	},
 /area/adminlevel/ert_station)
 "rR" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/item/reagent_container/food/condiment/enzyme,
 /turf/open/floor/prison{
 	icon_state = "kitchen"
@@ -1204,7 +1204,7 @@
 /turf/open/floor/plating/almayer,
 /area/adminlevel/ert_station/shuttle_dispatch)
 "BV" = (
-/obj/structure/closet/secure_closet/freezer/fridge/groceries,
+/obj/structure/closet/secure_closet/freezer/grocery,
 /turf/open/floor/prison{
 	icon_state = "kitchen"
 	},

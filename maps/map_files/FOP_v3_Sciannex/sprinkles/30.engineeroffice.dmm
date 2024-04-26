@@ -82,7 +82,7 @@
 	},
 /area/template_noop)
 "D" = (
-/obj/structure/closet/secure_closet/freezer/fridge/groceries,
+/obj/structure/closet/secure_closet/freezer/grocery,
 /obj/structure/machinery/light/double/blue{
 	dir = 4;
 	pixel_x = 10;

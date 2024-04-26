@@ -47806,7 +47806,7 @@
 	},
 /area/desert_dam/building/cafeteria/cold_room)
 "daQ" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor{
 	icon_state = "freezerfloor"
 	},
@@ -47965,7 +47965,7 @@
 /turf/open/floor/plating,
 /area/desert_dam/building/cafeteria/backroom)
 "dby" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/prison{
 	icon_state = "sterile_white"
 	},
@@ -50408,7 +50408,7 @@
 	},
 /area/desert_dam/building/cafeteria/cafeteria)
 "dpG" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison{
 	icon_state = "sterile_white"

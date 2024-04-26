@@ -6,7 +6,7 @@
 	},
 /area/template_noop)
 "b" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/prison{
 	dir = 10;
 	icon_state = "blue"
@@ -114,7 +114,7 @@
 	},
 /area/template_noop)
 "m" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/item/reagent_container/food/snacks/grown/tomato,
 /obj/item/reagent_container/food/snacks/grown/tomato,
 /obj/item/reagent_container/food/snacks/grown/tomato,
@@ -303,7 +303,7 @@
 	},
 /area/template_noop)
 "K" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/item/weapon/pizza_cutter,
 /turf/open/floor/prison{
 	icon_state = "kitchen"
@@ -387,7 +387,7 @@
 	},
 /area/template_noop)
 "Y" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/prison{
 	icon_state = "blue"
 	},

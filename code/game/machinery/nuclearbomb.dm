@@ -414,7 +414,7 @@ var/bomb_set = FALSE
 		if(current_mob && current_mob.loc)
 			var/turf/current_mob_turf = get_turf(current_mob)
 			if(z == current_mob_turf.z)
-				if(istype(current_mob.loc, /obj/structure/closet/secure_closet/freezer/fridge))
+				if(istype(current_mob.loc, /obj/structure/closet/secure_closet/freezer))
 					continue
 				current_mob.death(create_cause_data("nuclear explosion"))
 
@@ -422,7 +422,7 @@ var/bomb_set = FALSE
 		if(current_mob && current_mob.loc)
 			var/turf/current_mob_turf = get_turf(current_mob)
 			if(z == current_mob_turf.z)
-				if(istype(current_mob.loc, /obj/structure/closet/secure_closet/freezer/fridge))
+				if(istype(current_mob.loc, /obj/structure/closet/secure_closet/freezer))
 					continue
 				for(var/obj/item/alien_embryo/embryo in current_mob)
 					qdel(embryo)

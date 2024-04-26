@@ -1554,7 +1554,7 @@
 	},
 /area/bigredv2/caves/lambda/xenobiology)
 "aeT" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor{
 	icon_state = "freezerfloor"
 	},
@@ -11897,7 +11897,7 @@
 	},
 /area/bigredv2/outside/hydroponics)
 "aIz" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor{
 	icon_state = "freezerfloor"
 	},

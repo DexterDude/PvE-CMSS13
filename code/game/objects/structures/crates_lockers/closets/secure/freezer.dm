@@ -1,4 +1,7 @@
+// STANDARD
+
 /obj/structure/closet/secure_closet/freezer
+	name = "refrigerator"
 	icon = 'icons/obj/structures/machinery/kitchen.dmi'
 	icon_state = "fridge1"
 	icon_closed = "fridge"
@@ -6,6 +9,7 @@
 	icon_opened = "fridgeopen"
 	icon_broken = "fridgebroken"
 	icon_off = "fridge1"
+	storage_capacity = 60 // given extra storage so everything can fit, according to the original PVP-CM PR
 
 /obj/structure/closet/secure_closet/freezer/update_icon()
 	if(broken)
@@ -19,90 +23,153 @@
 		else
 			icon_state = icon_opened
 
-/obj/structure/closet/secure_closet/freezer/kitchen
-	name = "Kitchen Cabinet"
-	req_access = list(ACCESS_CIVILIAN_PUBLIC)
+/obj/structure/closet/secure_closet/freezer/general
+	name = "refrigerator"
 
-/obj/structure/closet/secure_closet/freezer/kitchen/Initialize()
+/obj/structure/closet/secure_closet/freezer/general/Initialize()
 	. = ..()
-	for(var/i = 0, i < 6, i++)
+	var/i = 0
+	for(i to 5)
 		new /obj/item/reagent_container/food/snacks/flour(src)
-	new /obj/item/reagent_container/food/condiment/sugar(src)
-	for(var/i = 0, i < 3, i++)
 		new /obj/item/reagent_container/food/snacks/meat/monkey(src)
-
-
-/obj/structure/closet/secure_closet/freezer/kitchen/mining
-	req_access = list()
-
-
+	for(var/i in 2 to 2)
+		new /obj/item/reagent_container/food/condiment/sugar(src)
+		new /obj/item/reagent_container/food/drinks/milk(src)
+		new /obj/item/storage/fancy/egg_box(src)
 
 /obj/structure/closet/secure_closet/freezer/meat
-	name = "Meat Fridge"
-
+	name = "meat refrigerator"
 
 /obj/structure/closet/secure_closet/freezer/meat/Initialize()
 	. = ..()
-	for(var/i = 0, i < 4, i++)
+	var/i = 0
+	for(i to 6)
 		new /obj/item/reagent_container/food/snacks/meat/monkey(src)
 
+/obj/structure/closet/secure_closet/freezer/fish
+	name = "fish refrigerator"
 
-
-/obj/structure/closet/secure_closet/freezer/fridge
-	name = "Refrigerator"
-
-/obj/structure/closet/secure_closet/freezer/fridge/Initialize()
+/obj/structure/closet/secure_closet/freezer/fish/Initialize()
 	. = ..()
-	for(var/i = 0, i < 5, i++)
-		new /obj/item/reagent_container/food/drinks/milk(src)
-	for(var/i = 0, i < 4, i++)
-		new /obj/item/reagent_container/food/drinks/soymilk(src)
-	for(var/i = 0, i < 2, i++)
-		new /obj/item/storage/fancy/egg_box(src)
+	var/i = 0
+	for(i to 6)
+		new /obj/item/reagent_container/food/snacks/carpmeat(src)
 
-/obj/structure/closet/secure_closet/freezer/fridge/ex_act(severity) // positively devious
-	return
+/obj/structure/closet/secure_closet/freezer/produce
+	name = "produce refrigerator"
 
-/obj/structure/closet/secure_closet/freezer/fridge/groceries
-	name = "Groceries"
-
-/obj/structure/closet/secure_closet/freezer/fridge/groceries/Initialize()
+/obj/structure/closet/secure_closet/freezer/produce/Initialize()
 	. = ..()
-	for(var/i = 0, i < 2, i++)
+	var/i = 0
+	for(i to 1)
 		new /obj/item/reagent_container/food/snacks/grown/apple(src)
-	for(var/i = 0, i < 2, i++)
 		new /obj/item/reagent_container/food/snacks/grown/cabbage(src)
-	for(var/i = 0, i < 2, i++)
 		new /obj/item/reagent_container/food/snacks/grown/carrot(src)
-	for(var/i = 0, i < 2, i++)
 		new /obj/item/reagent_container/food/snacks/grown/mushroom/chanterelle(src)
-	for(var/i = 0, i < 2, i++)
 		new /obj/item/reagent_container/food/snacks/grown/chili(src)
-	for(var/i = 0, i < 2, i++)
 		new /obj/item/reagent_container/food/snacks/grown/corn(src)
-	for(var/i = 0, i < 2, i++)
 		new /obj/item/reagent_container/food/snacks/grown/eggplant(src)
-	for(var/i = 0, i < 2, i++)
 		new /obj/item/reagent_container/food/snacks/grown/potato(src)
-	for(var/i = 0, i < 2, i++)
 		new /obj/item/reagent_container/food/snacks/grown/tomato(src)
-	for(var/i = 0, i < 2, i++)
 		new /obj/item/reagent_container/food/snacks/grown/whitebeet(src)
-	for(var/i = 0, i < 2, i++)
 		new /obj/item/reagent_container/food/snacks/grown/cherries(src)
-	for(var/i = 0, i < 2, i++)
 		new /obj/item/reagent_container/food/snacks/grown/lime(src)
-	for(var/i = 0, i < 2, i++)
 		new /obj/item/reagent_container/food/snacks/grown/lemon(src)
-	for(var/i = 0, i < 2, i++)
 		new /obj/item/reagent_container/food/snacks/grown/orange(src)
-	for(var/i = 0, i < 2, i++)
 		new /obj/item/reagent_container/food/snacks/grown/banana(src)
 
-/obj/structure/closet/secure_closet/freezer/money
-	name = "Freezer"
-	req_access = list(ACCESS_CIVILIAN_PUBLIC)
+/obj/structure/closet/secure_closet/freezer/floursugar
+	name = "pantry"
 
+/obj/structure/closet/secure_closet/freezer/dry/Initialize()
+	. = ..()
+
+		new /obj/item/reagent_container/food/snacks/flour(src)
+	var/i = 0
+	for(i to 1)
+		new /obj/item/reagent_container/food/condiment/sugar(src)
+
+/obj/structure/closet/secure_closet/freezer/grocery
+	name = "grocery refrigerator"
+
+/obj/structure/closet/secure_closet/freezer/grocery/Initialize()
+	. = ..()
+	var/i = 0
+	for(i to 1)
+		new /obj/item/reagent_container/food/drinks/milk(src)
+		new /obj/item/reagent_container/food/drinks/soymilk(src)
+		new /obj/item/storage/fancy/egg_box(src)
+	new /obj/item/reagent_container/food/condiment/enzyme(src)
+
+// BULK STORAGE
+
+/obj/structure/closet/secure_closet/freezer/meat/bulk
+	name = "meat refrigerator"
+
+/obj/structure/closet/secure_closet/freezer/meat/bulk/Initialize()
+	. = ..()
+	var/i = 0
+	for(i to 1)
+		new /obj/item/storage/box/foodproduct/meat(src)
+
+/obj/structure/closet/secure_closet/freezer/fish/bulk
+	name = "fish refrigerator"
+
+/obj/structure/closet/secure_closet/freezer/fish/bulk/Initialize()
+	. = ..()
+	var/i = 0
+	for(i to 1)
+		new /obj/item/storage/box/foodproduct/fish(src)
+
+/obj/structure/closet/secure_closet/freezer/grocery/bulk
+	name = "grocery refrigerator"
+
+/obj/structure/closet/secure_closet/freezer/grocery/bulk/Initialize()
+	. = ..()
+	var/i = 0
+	for(i to 1)
+		new /obj/item/storage/box/foodproduct/milk(src)
+		new /obj/item/storage/box/foodproduct/soymilk(src)
+		new /obj/item/storage/fancy/egg_box(src)
+		new /obj/item/storage/box/foodproduct/enzyme(src)
+
+/obj/structure/closet/secure_closet/freezer/dry/bulk
+	name = "pantry"
+
+/obj/structure/closet/secure_closet/freezer/dry/bulk/Initialize()
+	. = ..()
+	for(var/i in 4 to 4)
+		new /obj/item/storage/box/foodproduct/flour(src)
+	new /obj/item/storage/box/foodproduct/sugar(src)
+
+/obj/structure/closet/secure_closet/freezer/produce/bulk
+	name = "produce refrigerator"
+
+/obj/structure/closet/secure_closet/freezer/produce/bulk/Initialize()
+	. = ..()
+	new /obj/item/storage/box/foodproduct/apple(src)
+	new /obj/item/storage/box/foodproduct/banana(src)
+	new /obj/item/storage/box/foodproduct/chanterelle(src)
+	new /obj/item/storage/box/foodproduct/cherries(src)
+	new /obj/item/storage/box/foodproduct/chili(src)
+	new /obj/item/storage/box/foodproduct/cabbage(src)
+	new /obj/item/storage/box/foodproduct/carrot(src)
+	new /obj/item/storage/box/foodproduct/corn(src)
+	new /obj/item/storage/box/foodproduct/eggplant(src)
+	new /obj/item/storage/box/foodproduct/lemon(src)
+	new /obj/item/storage/box/foodproduct/lime(src)
+	new /obj/item/storage/box/foodproduct/orange(src)
+	new /obj/item/storage/box/foodproduct/potato(src)
+	new /obj/item/storage/box/foodproduct/tomato(src)
+	new /obj/item/storage/box/foodproduct/whitebeet(src)
+
+// #GIMMICK FREEZERS#
+
+//Money
+
+/obj/structure/closet/secure_closet/freezer/money
+	name = "freezer"
+	req_access = list(ACCESS_CIVILIAN_PUBLIC)
 
 /obj/structure/closet/secure_closet/freezer/money/Initialize()
 	. = ..()
@@ -113,18 +180,10 @@
 	for(var/i = 0, i < 6, i++)
 		new /obj/item/spacecash/c200(src)
 
-/obj/structure/closet/secure_closet/freezer/fridge/full
-
-/obj/structure/closet/secure_closet/freezer/fridge/full/Initialize()
-	. = ..()
-	for(var/i = 0, i < 2, i++)
-		new /obj/item/reagent_container/food/condiment/sugar(src)
-	for(var/i = 0, i < 6, i++)
-		new /obj/item/reagent_container/food/snacks/flour(src)
-	new /obj/item/reagent_container/food/condiment/enzyme(src)
+//Industrial
 
 /obj/structure/closet/secure_closet/freezer/industry
-	name = "Industry Freezer"
+	name = "industrial freezer"
 	desc = "A powerful fine-tuned freezer used to polymerize chemicals in the cold. This one is set to the perfect temperature for paraformaldehyde polymerization. The freezer must be kept closed for polymerization."
 	req_access = list(ACCESS_MARINE_OT)
 	var/obj/structure/machinery/paraform_cooler/CU
@@ -138,6 +197,8 @@
 /obj/structure/closet/secure_closet/freezer/industry/Destroy()
 	QDEL_NULL(CU)
 	return ..()
+
+//Paraform
 
 /obj/structure/machinery/paraform_cooler
 	var/cooldown = 5

@@ -5195,7 +5195,7 @@
 /turf/open/auto_turf/sand_white/layer1,
 /area/varadero/exterior/lz2_near)
 "dro" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/structure/machinery/alarm{
 	pixel_y = 24
 	},
@@ -18069,7 +18069,7 @@
 	},
 /area/varadero/interior/hall_SE)
 "lQO" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/shiva{
 	dir = 9;
 	icon_state = "green"
@@ -24013,7 +24013,7 @@
 	},
 /area/varadero/exterior/lz1_near)
 "pFS" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/structure/machinery/firealarm{
 	pixel_y = 24
 	},
@@ -28657,7 +28657,7 @@
 	},
 /area/varadero/interior_protected/maintenance/south)
 "swS" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /turf/open/floor/shiva{
 	icon_state = "multi_tiles"
 	},
@@ -30632,7 +30632,7 @@
 /turf/open/gm/dirt,
 /area/varadero/exterior/lz2_near)
 "tMx" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/produce,
 /obj/item/key/cargo_train,
 /turf/open/floor/shiva{
 	dir = 8;
@@ -36803,7 +36803,7 @@
 	},
 /area/varadero/interior/caves/east)
 "xIA" = (
-/obj/structure/closet/secure_closet/freezer/fridge/groceries,
+/obj/structure/closet/secure_closet/freezer/grocery,
 /turf/open/floor{
 	icon_state = "freezerfloor"
 	},
