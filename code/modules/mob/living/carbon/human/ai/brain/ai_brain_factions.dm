@@ -97,10 +97,102 @@
 /datum/human_ai_faction/proc/get_shoot_to_kill()
 	return shoot_to_kill
 
+/datum/human_ai_faction/colonist
+	faction = FACTION_COLONIST
+	friendly_factions = list(
+		FACTION_SURVIVOR,
+		FACTION_MARINE,
+		FACTION_ARMY,
+		FACTION_NAVY,
+		FACTION_UPP,
+		FACTION_MARSHAL,
+		FACTION_UACG,
+		FACTION_TWE,
+		FACTION_WY,
+		FACTION_PMC,
+	)
+	neutral_factions = list(
+		FACTION_FREELANCER,
+		FACTION_CONTRACTOR,
+		FACTION_MERCENARY,
+		FACTION_CANC,
+		FACTION_TWE_REBEL,
+		FACTION_UA_REBEL,
+	)
+
+/datum/human_ai_faction/contractor
+	faction = FACTION_CONTRACTOR
+	friendly_factions = list(
+		FACTION_SURVIVOR,
+		FACTION_MARINE,
+		FACTION_ARMY,
+		FACTION_NAVY,
+		FACTION_UPP,
+		FACTION_MARSHAL,
+		FACTION_UACG,
+		FACTION_TWE,
+		FACTION_WY,
+		FACTION_PMC,
+	)
+	neutral_factions = list(
+		FACTION_FREELANCER,
+		FACTION_MERCENARY,
+		FACTION_CANC,
+		FACTION_TWE_REBEL,
+		FACTION_UA_REBEL,
+	)
+
+/datum/human_ai_faction/merc
+	faction = FACTION_MERCENARY
+	friendly_factions = list(
+		FACTION_SURVIVOR,
+		FACTION_MARINE,
+		FACTION_ARMY,
+		FACTION_NAVY,
+		FACTION_UPP,
+		FACTION_MARSHAL,
+		FACTION_UACG,
+		FACTION_TWE,
+		FACTION_WY,
+		FACTION_PMC,
+	)
+	neutral_factions = list(
+		FACTION_FREELANCER,
+		FACTION_CONTRACTOR,
+		FACTION_CANC,
+		FACTION_TWE_REBEL,
+		FACTION_UA_REBEL,
+	)
+
+/datum/human_ai_faction/lancer
+	faction = FACTION_FREELANCER
+	friendly_factions = list(
+		FACTION_SURVIVOR,
+		FACTION_MARINE,
+		FACTION_ARMY,
+		FACTION_NAVY,
+		FACTION_UPP,
+		FACTION_MARSHAL,
+		FACTION_UACG,
+		FACTION_TWE,
+		FACTION_WY,
+		FACTION_PMC,
+	)
+	neutral_factions = list(
+		FACTION_CONTRACTOR,
+		FACTION_MERCENARY,
+		FACTION_CANC,
+		FACTION_TWE_REBEL,
+		FACTION_UA_REBEL,
+	)
+
 /datum/human_ai_faction/twerebel
 	faction = FACTION_TWE_REBEL
 	friendly_factions = list(
 		FACTION_COLONIST,
+	)
+	neutral_factions = list(
+		FACTION_SURVIVOR,
 	)
 	enter_combat_lines = list(
 		"Look alive!",
@@ -206,6 +298,9 @@
 	faction = FACTION_UA_REBEL
 	friendly_factions = list(
 		FACTION_COLONIST,
+	)
+	neutral_factions = list(
+		FACTION_SURVIVOR,
 	)
 	enter_combat_lines = list(
 		"CONTACT!",
@@ -381,12 +476,13 @@
 		FACTION_COLONIST,
 		FACTION_MARINE,
 		FACTION_WY,
+		FACTION_UACG,
 	)
 	neutral_factions = list(
 		FACTION_FREELANCER,
 		FACTION_CONTRACTOR,
 		FACTION_TWE,
-		FACTION_UPP,
+		FACTION_PMC,
 		FACTION_MERCENARY,
 		FACTION_SURVIVOR,
 	)
@@ -455,14 +551,15 @@
 		FACTION_ARMY,
 		FACTION_NAVY,
 		FACTION_COLONIST,
+		FACTION_MARSHAL,
+		FACTION_UACG,
 	)
 	neutral_factions = list(
-		FACTION_MARSHAL,
 		FACTION_TWE,
 		FACTION_WY,
+		FACTION_PMC,
 		FACTION_FREELANCER,
 		FACTION_CONTRACTOR,
-		FACTION_UPP,
 		FACTION_MERCENARY,
 		FACTION_SURVIVOR,
 	)
@@ -658,14 +755,15 @@
 		FACTION_MARINE,
 		FACTION_NAVY,
 		FACTION_COLONIST,
+		FACTION_MARSHAL,
+		FACTION_UACG,
 	)
 	neutral_factions = list(
-		FACTION_MARSHAL,
 		FACTION_TWE,
 		FACTION_WY,
+		FACTION_PMC,
 		FACTION_FREELANCER,
 		FACTION_CONTRACTOR,
-		FACTION_UPP,
 		FACTION_MERCENARY,
 		FACTION_SURVIVOR,
 	)
@@ -861,14 +959,15 @@
 		FACTION_MARINE,
 		FACTION_ARMY,
 		FACTION_COLONIST,
+		FACTION_MARSHAL,
+		FACTION_UACG,
 	)
 	neutral_factions = list(
-		FACTION_MARSHAL,
 		FACTION_TWE,
 		FACTION_WY,
+		FACTION_PMC,
 		FACTION_FREELANCER,
 		FACTION_CONTRACTOR,
-		FACTION_UPP,
 		FACTION_MERCENARY,
 		FACTION_SURVIVOR,
 	)
@@ -1060,18 +1159,11 @@
 /datum/human_ai_faction/upp
 	faction = FACTION_UPP
 	friendly_factions = list(
-		FACTION_ARMY,
-		FACTION_MARINE,
 		FACTION_COLONIST,
 	)
 	neutral_factions = list(
-		FACTION_TWE,
-		FACTION_WY,
 		FACTION_FREELANCER,
 		FACTION_CONTRACTOR,
-		FACTION_MARINE,
-		FACTION_ARMY,
-		FACTION_NAVY,
 		FACTION_MERCENARY,
 		FACTION_SURVIVOR,
 	)
@@ -1216,23 +1308,33 @@
 		"COVER ME!",
 	)
 
-/datum/human_ai_faction/upp
-	faction = FACTION_UPP
+/datum/human_ai_faction/canc
+	faction = FACTION_CANC
 	friendly_factions = list(
 		FACTION_COLONIST,
-		FACTION_PMC,
+	)
+	neutral_factions = list(
+		FACTION_SURVIVOR,
+	)
+
+/datum/human_ai_faction/wy
+	faction = FACTION_WY
+	friendly_factions = list(
+		FACTION_COLONIST,
 		FACTION_TWE,
-		FACTION_MARINE,
-		FACTION_ARMY,
-		FACTION_NAVY,
+		FACTION_PMC,
+		FACTION_WY_DEATHSQUAD,
 	)
 	neutral_factions = list(
 		FACTION_FREELANCER,
 		FACTION_CONTRACTOR,
+		FACTION_MERCENARY,
 		FACTION_MARINE,
 		FACTION_ARMY,
 		FACTION_NAVY,
-		FACTION_MERCENARY,
+		FACTION_MARSHAL,
+		FACTION_UACG,
+		FACTION_SURVIVOR,
 	)
 
 /datum/human_ai_faction/wy/pmc
@@ -1240,17 +1342,26 @@
 	friendly_factions = list(
 		FACTION_COLONIST,
 		FACTION_TWE,
+		FACTION_WY,
+		FACTION_WY_DEATHSQUAD,
 	)
 	neutral_factions = list(
 		FACTION_FREELANCER,
 		FACTION_CONTRACTOR,
 		FACTION_MERCENARY,
 		FACTION_MARINE,
+		FACTION_ARMY,
+		FACTION_NAVY,
+		FACTION_MARSHAL,
+		FACTION_UACG,
+		FACTION_SURVIVOR,
 	)
+
 /datum/human_ai_faction/wy_deathsquad
 	faction = FACTION_WY_DEATHSQUAD
 	friendly_factions = list(
 		FACTION_WY,
+		FACTION_PMC,
 	)
 	enter_combat_lines = list(
 		"Visual confirmed, engaging.",
@@ -1286,7 +1397,12 @@
 		FACTION_FREELANCER,
 		FACTION_CONTRACTOR,
 		FACTION_MERCENARY,
+		FACTION_SURVIVOR,
 		FACTION_MARINE,
+		FACTION_ARMY,
+		FACTION_NAVY,
+		FACTION_MARSHAL,
+		FACTION_UACG,
 	)
 	enter_combat_lines = list(
 		"CONTACT!",
@@ -1509,5 +1625,204 @@
 		"This is for you...!",
 	)
 
+/datum/human_ai_faction/zombie
+	faction = FACTION_ZOMBIE
+	enter_combat_lines = list(
+		"Agggh.",
+		"Uuuugh...",
+		"Agh...",
+		"AGGGGH!!!",
+		"myhhhh...",
+		"Sam!",
+		"Gahhhh!",
+		"Bleeeeh",
+		"Graaaa",
+		"Guhhh...",
+		"Muaaahh...",
+		"Wuaaah...",
+		"H-he-h..elp..",
+		"Wmuaaaaa",
+		"WMUAAAAA!",
+		"GAAAHHHH!",
+		"AAAAAAAGHH!",
+		"UUUUUUGUGH!",
+		"llluggh...",
+		"Draaa..",
+		"Daa...die...agggh",
+		"...",
+		"Bluhhhh...",
+		"*pain",
+		"*scream",
+	)
+	exit_combat_lines = list(
+		"Agggh.",
+		"Uuuugh...",
+		"Agh...",
+		"AGGGGH!!!",
+		"myhhhh...",
+		"Sam!",
+		"Gahhhh!",
+		"Bleeeeh",
+		"Graaaa",
+		"Guhhh...",
+		"Muaaahh...",
+		"Wuaaah...",
+		"H-he-h..elp..",
+		"Wmuaaaaa",
+		"WMUAAAAA!",
+		"GAAAHHHH!",
+		"AAAAAAAGHH!",
+		"UUUUUUGUGH!",
+		"llluggh...",
+		"Draaa..",
+		"Daa...die...agggh",
+		"...",
+		"Bluhhhh...",
+		"*pain",
+		"*scream",
+	)
+	squad_member_death_lines = list(
+		"Agggh.",
+		"Uuuugh...",
+		"Agh...",
+		"AGGGGH!!!",
+		"myhhhh...",
+		"Sam!",
+		"Gahhhh!",
+		"Bleeeeh",
+		"Graaaa",
+		"Guhhh...",
+		"Muaaahh...",
+		"Wuaaah...",
+		"H-he-h..elp..",
+		"Wmuaaaaa",
+		"WMUAAAAA!",
+		"GAAAHHHH!",
+		"AAAAAAAGHH!",
+		"UUUUUUGUGH!",
+		"llluggh...",
+		"Draaa..",
+		"Daa...die...agggh",
+		"...",
+		"Bluhhhh...",
+		"*pain",
+		"*scream",
+	)
+	reload_lines = list(
+		"Agggh.",
+		"Uuuugh...",
+		"Agh...",
+		"AGGGGH!!!",
+		"myhhhh...",
+		"Sam!",
+		"Gahhhh!",
+		"Bleeeeh",
+		"Graaaa",
+		"Guhhh...",
+		"Muaaahh...",
+		"Wuaaah...",
+		"H-he-h..elp..",
+		"Wmuaaaaa",
+		"WMUAAAAA!",
+		"GAAAHHHH!",
+		"AAAAAAAGHH!",
+		"UUUUUUGUGH!",
+		"llluggh...",
+		"Draaa..",
+		"Daa...die...agggh",
+		"...",
+		"Bluhhhh...",
+		"*pain",
+		"*scream",
+	)
+	reload_internal_mag_lines = list(
+		"Agggh.",
+		"Uuuugh...",
+		"Agh...",
+		"AGGGGH!!!",
+		"myhhhh...",
+		"Sam!",
+		"Gahhhh!",
+		"Bleeeeh",
+		"Graaaa",
+		"Guhhh...",
+		"Muaaahh...",
+		"Wuaaah...",
+		"H-he-h..elp..",
+		"Wmuaaaaa",
+		"WMUAAAAA!",
+		"GAAAHHHH!",
+		"AAAAAAAGHH!",
+		"UUUUUUGUGH!",
+		"llluggh...",
+		"Draaa..",
+		"Daa...die...agggh",
+		"...",
+		"Bluhhhh...",
+		"*pain",
+		"*scream",
+	)
+	grenade_thrown_lines = list(
+		"Agggh.",
+		"Uuuugh...",
+		"Agh...",
+		"AGGGGH!!!",
+		"myhhhh...",
+		"Sam!",
+		"Gahhhh!",
+		"Bleeeeh",
+		"Graaaa",
+		"Guhhh...",
+		"Muaaahh...",
+		"Wuaaah...",
+		"H-he-h..elp..",
+		"Wmuaaaaa",
+		"WMUAAAAA!",
+		"GAAAHHHH!",
+		"AAAAAAAGHH!",
+		"UUUUUUGUGH!",
+		"llluggh...",
+		"Draaa..",
+		"Daa...die...agggh",
+		"...",
+		"Bluhhhh...",
+		"*pain",
+		"*scream",
+	)
+	need_healing_lines = list(
+		"Agggh.",
+		"Uuuugh...",
+		"Agh...",
+		"AGGGGH!!!",
+		"myhhhh...",
+		"Sam!",
+		"Gahhhh!",
+		"Bleeeeh",
+		"Graaaa",
+		"Guhhh...",
+		"Muaaahh...",
+		"Wuaaah...",
+		"H-he-h..elp..",
+		"Wmuaaaaa",
+		"WMUAAAAA!",
+		"GAAAHHHH!",
+		"AAAAAAAGHH!",
+		"UUUUUUGUGH!",
+		"llluggh...",
+		"Draaa..",
+		"Daa...die...agggh",
+		"...",
+		"Bluhhhh...",
+		"*pain",
+		"*scream",
+	)
+
+
 /datum/human_ai_faction/xeno_cultist/corrupted
 	faction = FACTION_XENOMORPH_CORRPUTED
+
+/datum/human_ai_faction/malfunctioning_synth
+	faction = FACTION_MALF_SYNTH
+	friendly_factions = list(
+		FACTION_COLONIST,
+	)

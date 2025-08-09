@@ -56,7 +56,7 @@
 			M.client.change_view(8, vehicle)
 
 /obj/structure/bed/chair/comfy/vehicle/clicked(mob/user, list/mods) // If you're buckled, you can shift-click on the seat in order to return to camera-view
-	if(user == buckled_mob && mods["shift"] && !user.is_mob_incapacitated())
+	if(user == buckled_mob && mods[SHIFT_CLICK] && !user.is_mob_incapacitated())
 		user.client.change_view(8, vehicle)
 		vehicle.set_seated_mob(seat, user)
 		return TRUE
@@ -529,3 +529,10 @@
 
 /obj/structure/bed/chair/vehicle/dropship_cockpit/copilot
 	name = "co-pilot seat"
+
+// GUNNER VAN Seat
+/obj/structure/bed/chair/comfy/vehicle/van_gunner
+	name = "gunner's seat"
+	desc = "Comfortable seat for a gunner."
+	seat = VEHICLE_GUNNER
+	required_skill = SKILL_VEHICLE_DEFAULT
